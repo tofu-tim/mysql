@@ -1,0 +1,23 @@
+INSERT INTO users (first_name, last_name, email) VALUES
+    ('John', 'Wick', 'youkilledmydog@keanu.com'),
+    ('Will', 'Smith', 'keepmywifesname@yourfreakingmouth.com'),
+    ('Michael', 'Jordan', 'therealmagicmike@nothingbut.net');
+
+SELECT * FROM users;
+
+SELECT * FROM users WHERE email = 'youkilledmydog@keanu.com';
+
+SELECT * FROM users WHERE id = (SELECT MAX(id) FROM users);
+
+UPDATE users SET last_name = 'Pancakes' WHERE id = 3;
+
+DELETE FROM users WHERE id = 2;
+
+SELECT * FROM users ORDER BY first_name DESC;
+
+
+
+
+
+
+
